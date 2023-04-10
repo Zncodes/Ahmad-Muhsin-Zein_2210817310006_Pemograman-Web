@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title>Form</title>
+</head>
+<body>
+    <table width="500px" border="3" cellspacing="1" align = center>
+        <tr height="90px" bgcolor="#87ceea">
+            <th align="center" colspan="2" style="font-family: Arial; color: rgb(220, 20, 60);">
+                <h1> Pendaftaran Kursus</h1>
+            </th>
+        </tr>
+        <tr height="350px" bgcolor="grey">
+            <td valign="top">
+                <table>
+                    <h3 style="font-family: Arial">Data Diri</h3>
+                    <form>
+                        <tr>
+                            <td>Nama</td>
+                            <td><input type="text" name="nama"></td>
+                        </tr>
+                        <tr>
+                            <td>Nim</td>
+                            <td><input type="number" name="nim" value="" maxlength="12"></td>
+                        </tr>
+                        <tr>
+                            <td>E-mail</td>
+                            <td><input type="email" name="E-mail"></td>
+                        </tr>
+                        <tr>
+                            <td>Tanggal Lahir</td>
+                            <td><input type="date" name="Tanggal Lahir"> </td>
+                        </tr>
+                        <tr valign="top">
+                            <td>Jenis Kelamin</td>
+                            <td>
+                                <input type="radio" name="JK" value="lk"> Laki-laki <br>
+                                <input type="radio" name="JK" value="pr"> Perempuan
+                            </td>
+                        </tr>
+                        <tr valign="top">
+                            <td>Pilih Program Kursus</td>
+                            <td>
+                                <input type="checkbox" name="program1" value="C#"> C# <br>
+                                <input type="checkbox" name="program2" value="Java"> Java <br>
+                                <input type="checkbox" name="program3" value="SQL"> SQL <br>
+                                <input type="checkbox" name="program4" value="HTML_PHP"> HTML dan PHP <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pilihan Hari/Jam Kursus</td>
+                            <td><select name="Jadwal Kursus">
+                                    <option value="opsi1"> Senin - Rabu/09.00 - 11.00 </option>
+                                    <option value="opsi2"> Kamis - Jumat/13.00 - 15.00 </option>
+                                    <option value="opsi3"> Senin - Rabu/13.00 - 15.00 </option>
+                                    <option value="opsi4"> Kamis - Jumat/08.50 - 10.30 </option>
+                                </select>
+                            </td>
+                        </tr>
+                </table>
+                <tr height="150" bgcolor="indianred" valign="top">
+                    <td style="padding: 5px;"> Komentar Anda
+                        <textarea name="komentar" cols="55" rows="5" style="margin-bottom: 8px"></textarea>
+                        <br>
+                        <button type="reset" value="Reset">Reset</button>
+                        <button type="submit" value="Submit">Submit</button>
+                        <button type="button" value="Cancel">Cancel</button>
+                    </td>
+                </tr>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
